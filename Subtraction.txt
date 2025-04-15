@@ -1,0 +1,20 @@
+   IDENTIFICATION DIVISION.
+   PROGRAM-ID. SUBTRACTION.
+
+   ENVIRONMENT DIVISION.
+
+   DATA DIVISION.
+   WORKING-STORAGE SECTION.
+   01 WS-NUM1        PIC 9(5) VALUE 0.
+   01 WS-NUM2        PIC 9(5) VALUE 0.
+   01 WS-RESULT      PIC S9(6) VALUE 0.
+
+   PROCEDURE DIVISION.
+   MAIN-PROCEDURE.
+       DISPLAY "Enter the first number: " WITH NO ADVANCING.
+       ACCEPT WS-NUM1.
+       DISPLAY "Enter the second number: " WITH NO ADVANCING.
+       ACCEPT WS-NUM2.
+       COMPUTE WS-RESULT = WS-NUM1 - WS-NUM2.
+       DISPLAY "The result of subtraction is: " WS-RESULT.
+       STOP RUN.
